@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { NavigationContext } from './contexts/NavigationContext/Context';
+import NavigationProvider from './contexts/NavigationContext/Provider';
 
 function App() {
-  return <div className="App">t</div>;
+  return <NavigationProvider>App</NavigationProvider>;
 }
 
 export default App;

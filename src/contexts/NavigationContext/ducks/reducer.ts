@@ -1,5 +1,5 @@
 import * as t from './types';
-import { DefaultNavigationState, Action } from '@Types';
+import { DefaultNavigationState, Action } from '@Types/contexts';
 
 export const INITIAL_STATE: DefaultNavigationState = {
   currentStep: 0

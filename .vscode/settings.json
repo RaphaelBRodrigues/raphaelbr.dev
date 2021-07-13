@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.eslintcache": true,
+    "**/.gitignore":true,
+    "**/*lock*":true,
+    "**/scripts":true,
+    "**/config":true,
+    "**/node_modules": true,
+    "**/.vscode": true,
+    "**/.alias.json": true,
+    "**/tsconfig.json": true,
+  },
+}

@@ -6,7 +6,7 @@
       "@Containers/*": ["src/containers/*"],
       "@Services/*": ["src/services/*"],
       "@Assets/*": ["src/assets/*"],
-      "@Pages/*": ["src/pages/*"],
+      "@Sections/*": ["src/sections/*"],
       "@Components/*": ["src/components/*"],
       "@Utils/*": ["src/utils/*"],
       "@Hooks/*": ["src/hooks/*"],
