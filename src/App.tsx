@@ -1,9 +1,14 @@
-import React, { useContext } from 'react';
-import { NavigationContext } from './contexts/NavigationContext/Context';
-import NavigationProvider from './contexts/NavigationContext/Provider';
+import React from 'react';
+import { NavigationProvider } from '@Contexts/NavigationContext';
+
+import Initial from '@Sections/Initial';
 
 function App() {
-  return <NavigationProvider>App</NavigationProvider>;
+  return (
+    <NavigationProvider>
+      <Initial />
+    </NavigationProvider>
+  );
 }
 
 export default App;

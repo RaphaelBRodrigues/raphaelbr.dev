@@ -1,8 +1,6 @@
 import * as t from './types'
 
-export const setCurrentStep = () => {
-  return {
-    type: t.SET_CURRENT_STEP,
-    payload: 1
-  }
-}
+export const setCurrentStep = (payload: Number) => ({
+  type: t.SET_CURRENT_STEP,
+  payload
+});

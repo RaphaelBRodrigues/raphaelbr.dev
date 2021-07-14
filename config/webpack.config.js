@@ -1,4 +1,4 @@
-'use strict';
+
 
 const fs = require('fs');
 const path = require('path');
@@ -26,6 +26,7 @@ const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+
 
 const postcssNormalize = require('postcss-normalize');
 
@@ -334,6 +335,16 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        "@Contexts": path.resolve(__dirname, "../src/contexts/"),
+        "@Types": path.resolve(__dirname,"../src/types/"),
+        "@Containers": path.resolve(__dirname,"../src/containers/"),
+        "@Services": path.resolve(__dirname,"../src/services/"),
+        "@Assets": path.resolve(__dirname,"../src/assets/"),
+        "@Sections": path.resolve(__dirname,"../src/sections/"),
+        "@Components": path.resolve(__dirname,"../src/components/"),
+        "@Utils": path.resolve(__dirname,"../src/utils/"),
+        "@Hooks": path.resolve(__dirname,"../src/hooks/"),
+        "@Styles": path.resolve(__dirname,"../src/styles"),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

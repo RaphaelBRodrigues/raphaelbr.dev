@@ -4,4 +4,11 @@ import { INITIAL_STATE } from './ducks/reducer';
 
 
 
-export const NavigationContext = createContext<DefaultNavigationState>(INITIAL_STATE);
+const NavigationContext = createContext<DefaultNavigationState>(INITIAL_STATE);
+
+const NavigationDispatch = createContext<React.Dispatch<any>>(() => {
+  console.log("create");
+  return null;
+});
+
+export { NavigationContext, NavigationDispatch };
