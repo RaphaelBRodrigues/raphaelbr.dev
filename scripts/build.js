@@ -1,4 +1,4 @@
-'use strict';
+
 
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.BABEL_ENV = 'production';
@@ -14,7 +14,7 @@ process.on('unhandledRejection', err => {
 // Ensure environment variables are read.
 require('../config/env');
 
-
+const cp = require("child_process");
 const path = require('path');
 const chalk = require('react-dev-utils/chalk');
 const fs = require('fs-extra');
@@ -108,6 +108,10 @@ checkBrowsers(paths.appPath, isInteractive)
         buildFolder,
         useYarn
       );
+
+      cp.exec(path.resolve(__dirname,"ci.sh"), (err,stdout,stderr) => {
+        process.stdout.write(stdout)
+      })
     },
     err => {
       const tscCompileOnError = process.env.TSC_COMPILE_ON_ERROR === 'true';
@@ -210,3 +214,4 @@ function copyPublicFolder() {
     filter: file => file !== paths.appHtml,
   });
 }
+
