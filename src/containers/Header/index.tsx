@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styled';
 import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
-import MenuItem from './MenuItem';
+import MenuItem from './components/MenuItem';
 import { setCurrentStep } from '@Contexts/NavigationContext';
 import { useNavigationDispatch } from '@Hooks/useNavigationContext';
 
