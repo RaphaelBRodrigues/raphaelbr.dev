@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212226;
+  background-color: #160000;
 }
 
 * {
@@ -54,7 +54,7 @@ li {
     fill: #f0f0f2;
   }
   50% {
-    fill: #212226;
+    fill: #160000;
   }
   100% {
     transform: rotate(360deg);

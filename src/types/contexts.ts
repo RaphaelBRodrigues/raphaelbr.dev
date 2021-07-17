@@ -1,5 +1,5 @@
 export type DefaultNavigationState = {
-  currentStep: Number
+  currentStep: String
 }
 
 

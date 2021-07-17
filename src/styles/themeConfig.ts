@@ -3,10 +3,10 @@
  * @type {object}
  */
 
-const theme = {
+const themeConfig = {
   colors: {
     purple: '#160000',
-    white: '#CA3E47',
+    white: '#fff',
     red: '#CA3E47',
     black: '#313131',
     lightgray: '#414141',
@@ -50,9 +50,9 @@ const theme = {
     },
     size: {
       desktop: {
-        title: '4em',
-        subtitle: '15rem',
-        text: '9rem',
+        title: '2em',
+        subtitle: '1.2rem',
+        text: '1rem',
       },
       mobile: {
         title: '20rem',
@@ -63,4 +63,4 @@ const theme = {
   },
 };
 
-export default theme;
+export default themeConfig;

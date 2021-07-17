@@ -2,7 +2,7 @@ import * as t from './types';
 import { DefaultNavigationState, Action } from '@Types/contexts';
 
 export const INITIAL_STATE: DefaultNavigationState = {
-  currentStep: 0
+  currentStep: "initial"
 }
 
 export function reducer(state: DefaultNavigationState, { payload, type }: Action): DefaultNavigationState {
