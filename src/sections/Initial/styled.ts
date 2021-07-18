@@ -6,7 +6,7 @@ export const InitialWrapper = styled.section`
   width: 80%;
   justify-content: center;
   position: relative;
-  top: 25vh;
+  top: 20vh;
 `;
 
 export const DescriptionWrapper = styled.div`

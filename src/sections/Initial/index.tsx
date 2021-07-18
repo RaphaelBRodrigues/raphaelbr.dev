@@ -13,7 +13,8 @@ const Initial = () => {
           <Title>Fell Free</Title>
           <S.SubTitle>Hello, be welcome to my website!</S.SubTitle>
           <S.Text>
-            But i must explain to you how all this mistaken idea of denouncing
+            But i must explain to you how all this mistaken idea of denouncing{' '}
+            <br />
             pleasure and praising pain was born and
           </S.Text>
         </S.TextWrapper>
