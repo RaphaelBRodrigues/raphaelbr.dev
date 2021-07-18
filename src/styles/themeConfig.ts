@@ -50,7 +50,7 @@ const themeConfig = {
     },
     size: {
       desktop: {
-        title: '2em',
+        title: '2.5em',
         subtitle: '1.2rem',
         text: '1rem',
       },

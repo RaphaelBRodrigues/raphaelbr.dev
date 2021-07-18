@@ -1,11 +1,23 @@
-import styled from 'styled-components';
+import { StyledButton } from './index';
+import styled, { css } from 'styled-components';
 
-export const Button = styled.button`
+
+const ButtonStyle = css`
   background-color: transparent;
-  border: 2px solid ${({ theme }) => theme.colors.red};
+  border: 2.5px solid ${({ theme }) => theme.colors.red};
   color: ${({ theme }) => theme.colors.red};
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  padding: 0.5rem 1.2rem;
-  
+  padding: 0.5rem 0 0.6rem;
+  width: 15rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+`
+export const Button = styled.button<StyledButton>`
+  ${ButtonStyle}
+`;
+
+export const Link = styled.a<StyledButton>`
+  ${ButtonStyle}
 `;
