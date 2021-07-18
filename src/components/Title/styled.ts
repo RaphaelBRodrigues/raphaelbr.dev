@@ -5,7 +5,8 @@ export const Title = styled.h1`
   font-family: ${({ theme }) => theme.font.family.primary};
   font-size: ${({ theme }) => theme.font.size.desktop.title};
   font-weight: 500;
-  
+
+ 
   &::after {
     content: "";
     background-color: ${({ theme }) => theme.colors.red};
@@ -13,4 +14,17 @@ export const Title = styled.h1`
     width: 7%;
     display: block;
   }
+
+  @media(max-width:768px) { 
+    font-size: ${({ theme }) => theme.font.size.mobile.title};
+
+    &::after {
+      width: 20%;
+      position: relative;
+      left: 0;
+      top: 3px;
+      margin: 0 auto;
+    }
+  }
+  
 `;

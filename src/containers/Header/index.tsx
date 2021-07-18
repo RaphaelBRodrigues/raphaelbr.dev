@@ -1,21 +1,20 @@
 import React from 'react';
 import * as S from './styled';
 import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
-import MenuItem from './components/MenuItem';
 import { setCurrentStep } from '@Contexts/NavigationContext';
 import { useNavigationDispatch } from '@Hooks/useNavigationContext';
+import { Mobile, NotMobile } from '@Components/Responsive';
+import { MenuDesktop } from '@Components/Menu';
 
 const Header: React.FC = () => {
   const navigationDispatch = useNavigationDispatch();
   return (
     <S.Header>
       <Logo onClick={() => navigationDispatch(setCurrentStep('initial'))} />
-      <S.MenuWrapper>
-        <MenuItem stepName="initial"> .init()</MenuItem>
-        <MenuItem stepName="about"> .about()</MenuItem>
-        <MenuItem stepName="skills"> .skills()</MenuItem>
-        <MenuItem stepName="contact"> .contact()</MenuItem>
-      </S.MenuWrapper>
+      <NotMobile>
+        <MenuDesktop />
+      </NotMobile>
+      <Mobile>{/* <MenuMobile /> */}</Mobile>
     </S.Header>
   );
 };

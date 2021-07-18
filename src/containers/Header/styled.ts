@@ -11,9 +11,14 @@ export const Header = styled.header`
   svg {
     cursor: pointer;
   }
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+
+    svg {
+      position: absolute;
+      top: 10%;
+    }
+  }
 `;
 
-export const MenuWrapper = styled.ul`
-  display: flex;
-  gap: 1.5rem;
-`;

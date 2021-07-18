@@ -55,9 +55,9 @@ const themeConfig = {
         text: '1rem',
       },
       mobile: {
-        title: '20rem',
-        subtitle: '15rem',
-        text: '9rem',
+        title: '2.8rem',
+        subtitle: '1.2rem',
+        text: '1rem',
       },
     },
   },

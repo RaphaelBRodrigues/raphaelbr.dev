@@ -13,6 +13,10 @@ const ButtonStyle = css`
   font-weight: 400;
   cursor: pointer;
   text-align: center;
+
+  @media(max-width:768px) {
+    width: 100%;
+  }
 `
 export const Button = styled.button<StyledButton>`
   ${ButtonStyle}
