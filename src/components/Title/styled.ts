@@ -4,7 +4,7 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.red};
   font-family: ${({ theme }) => theme.font.family.primary};
   font-size: ${({ theme }) => theme.font.size.desktop.title};
-  font-weight: 500;
+  font-weight: 400;
 
  
   &::after {
@@ -13,6 +13,8 @@ export const Title = styled.h1`
     height: 3px;
     width: 7%;
     display: block;
+    position: relative;
+    left: 0.2rem;
   }
 
   @media(max-width:768px) { 

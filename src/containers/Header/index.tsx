@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
 import { setCurrentStep } from '@Contexts/NavigationContext';
 import { useNavigationDispatch } from '@Hooks/useNavigationContext';
 import { Mobile, NotMobile } from '@Components/Responsive';
-import { MenuDesktop } from '@Components/Menu';
+import { MenuDesktop, MenuMobile } from '@Components/Menu';
 
 const Header: React.FC = () => {
   const navigationDispatch = useNavigationDispatch();
@@ -14,7 +14,9 @@ const Header: React.FC = () => {
       <NotMobile>
         <MenuDesktop />
       </NotMobile>
-      <Mobile>{/* <MenuMobile /> */}</Mobile>
+      <Mobile>
+        <MenuMobile />
+      </Mobile>
     </S.Header>
   );
 };

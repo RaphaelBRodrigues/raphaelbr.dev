@@ -109,9 +109,9 @@ checkBrowsers(paths.appPath, isInteractive)
         useYarn
       );
 
-      cp.exec(path.resolve(__dirname,"ci.sh"), (err,stdout,stderr) => {
-        process.stdout.write(stdout)
-      })
+      // cp.exec(path.resolve(__dirname,"ci.sh"), (err,stdout,stderr) => {
+      //   process.stdout.write(stdout)
+      // })
     },
     err => {
       const tscCompileOnError = process.env.TSC_COMPILE_ON_ERROR === 'true';

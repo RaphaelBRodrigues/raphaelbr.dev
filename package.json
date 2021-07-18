@@ -152,5 +152,7 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "https://raphaelbr.dev",
+  "devDependencies": {}
 }

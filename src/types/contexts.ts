@@ -1,10 +1,13 @@
 export type DefaultNavigationState = {
-  currentStep: String
+  currentStep: string,
+  isLastStep: boolean,
+  isFirstStep: boolean,
+  isMenuOpen: boolean,
 }
 
 
 export type Action = {
   payload: any,
-  type: String
+  type: string
 }
 

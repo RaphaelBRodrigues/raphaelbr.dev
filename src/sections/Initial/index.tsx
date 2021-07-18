@@ -13,19 +13,19 @@ const Initial = () => {
       </NotMobile>
       <S.DescriptionWrapper>
         <S.TextWrapper>
-          <Title>Fell Free</Title>
-          <S.SubTitle>Hello, be welcome to my website!</S.SubTitle>
+          <Title>Be Welcome!</Title>
+          <S.SubTitle>My name is Raphael</S.SubTitle>
           <NotMobile>
             <S.Text>
-              But i must explain to you how all this mistaken idea of denouncing
-              <br />
-              pleasure and praising pain was born and
+              And this is my personal website, i really hope you enjoy and
+              undestand
+              <br />a little about me
             </S.Text>
           </NotMobile>
           <Mobile>
             <S.Text>
-              But i must explain to you how all this <br /> mistaken idea of
-              denouncing pleasure <br /> and praising pain was born and
+              And this is my personal website, i really <br /> hope you enjoy
+              and undestand <br /> a little about me
             </S.Text>
           </Mobile>
         </S.TextWrapper>

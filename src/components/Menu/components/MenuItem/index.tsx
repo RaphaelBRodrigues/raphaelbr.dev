@@ -8,14 +8,15 @@ import * as S from './styled';
 
 type Props = {
   stepName: String;
+  disabled?: boolean;
 };
 
-const MenuItem: React.FC<Props> = ({ stepName, children }) => {
+const MenuItem: React.FC<Props> = ({ stepName, disabled, children }) => {
   const { currentStep } = useNavigationContext();
   const navigationDispatch = useNavigationDispatch();
 
   const handleClick = () => {
-    navigationDispatch(setCurrentStep(stepName));
+    if (!disabled) navigationDispatch(setCurrentStep(stepName));
   };
 
   return (

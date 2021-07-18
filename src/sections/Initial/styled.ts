@@ -7,25 +7,26 @@ export const InitialWrapper = styled.section`
   justify-content: center;
   position: relative;
   top: 20vh;
-
+  
   @media(max-width:768px) {
     text-align: center;
+    top: 25vh;
   }
-  `;
+`;
 
 export const DescriptionWrapper = styled.div`
   width: 55%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: -0.5rem;
 
   @media(max-width:768px) {
     width: 100%;
   }
 `;
 
-export const TextWrapper = styled.div`
-`;
+export const TextWrapper = styled.div``;
 
 export const SubTitle = styled.h2`
   color: ${({ theme }) => theme.colors.white};
@@ -51,6 +52,7 @@ export const Text = styled.p`
 export const ButtonsWrapper = styled.div`
   display: flex;
   gap: 1rem;  
+  margin-top: 1rem;
 
   @media(max-width:768px) {
     margin: 1rem auto;

@@ -14,7 +14,7 @@ export const Table = styled.div`
   color: white;
   grid-template-rows: repeat(4,1fr);
   grid-template-columns: repeat(8,1fr);
-  font-size: 2.5rem;
+  font-size: 3rem;
   gap: 0.7rem;
   width: inherit;
 `;

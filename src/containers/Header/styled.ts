@@ -17,8 +17,7 @@ export const Header = styled.header`
 
     svg {
       position: absolute;
-      top: 10%;
+      top: 20%;
     }
   }
 `;
-

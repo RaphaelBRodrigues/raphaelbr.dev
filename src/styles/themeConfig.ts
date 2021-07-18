@@ -8,7 +8,8 @@ const themeConfig = {
     purple: '#160000',
     white: '#fff',
     red: '#CA3E47',
-    black: '#313131',
+    black: '#000',
+    dark: '#313131',
     lightgray: '#414141',
     gray: '#525252',
     alpha: {
@@ -50,13 +51,13 @@ const themeConfig = {
     },
     size: {
       desktop: {
-        title: '2.5em',
+        title: '3.2em',
         subtitle: '1.2rem',
         text: '1rem',
       },
       mobile: {
         title: '2.8rem',
-        subtitle: '1.2rem',
+        subtitle: '1.6rem',
         text: '1rem',
       },
     },

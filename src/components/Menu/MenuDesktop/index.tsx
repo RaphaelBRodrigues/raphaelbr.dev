@@ -5,10 +5,16 @@ import * as S from './styled';
 const MenuDesktop = () => {
   return (
     <S.MenuWrapper>
-      <MenuItem stepName="initial"> .init()</MenuItem>
-      <MenuItem stepName="about"> .about()</MenuItem>
-      <MenuItem stepName="skills"> .skills()</MenuItem>
-      <MenuItem stepName="contact"> .contact()</MenuItem>
+      <MenuItem stepName="initial">.init()</MenuItem>
+      <MenuItem disabled stepName="about">
+        .about()
+      </MenuItem>
+      <MenuItem disabled stepName="skills">
+        .skills()
+      </MenuItem>
+      <MenuItem disabled stepName="contact">
+        .contact()
+      </MenuItem>
     </S.MenuWrapper>
   );
 };
