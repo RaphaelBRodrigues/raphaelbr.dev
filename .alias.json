@@ -3,6 +3,7 @@
     "baseUrl": "./",
     "paths": {
       "@Types/*": ["src/types/*"],
+      "@Constants/*": ["src/constants/*"],
       "@Containers/*": ["src/containers/*"],
       "@Contexts/*": ["src/contexts/*"],
       "@Services/*": ["src/services/*"],

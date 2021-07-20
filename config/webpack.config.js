@@ -336,6 +336,7 @@ module.exports = function (webpackEnv) {
         }),
         ...(modules.webpackAliases || {}),
         "@Contexts": path.resolve(__dirname, "../src/contexts/"),
+        "@Constants": path.resolve(__dirname,"../src/constants/"),
         "@Types": path.resolve(__dirname,"../src/types/"),
         "@Containers": path.resolve(__dirname,"../src/containers/"),
         "@Services": path.resolve(__dirname,"../src/services/"),
@@ -344,7 +345,7 @@ module.exports = function (webpackEnv) {
         "@Components": path.resolve(__dirname,"../src/components/"),
         "@Utils": path.resolve(__dirname,"../src/utils/"),
         "@Hooks": path.resolve(__dirname,"../src/hooks/"),
-        "@Styles": path.resolve(__dirname,"../src/styles"),
+        "@Styles": path.resolve(__dirname,"../src/styles/"),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

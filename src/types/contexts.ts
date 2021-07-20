@@ -5,6 +5,10 @@ export type DefaultNavigationState = {
   isMenuOpen: boolean,
 }
 
+export type DefaultGeneralState = {
+
+}
+
 
 export type Action = {
   payload: any,

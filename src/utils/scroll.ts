@@ -3,7 +3,7 @@ function scrollBody(isDisabled: boolean) {
   if (isDisabled && $body)
     $body!.style.overflow = "hidden";
   else
-    $body!.style.overflowY = "inherit";
+    $body!.style.overflow = "inherit";
 }
 
 export default scrollBody

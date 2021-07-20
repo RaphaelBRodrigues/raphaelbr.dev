@@ -33,7 +33,7 @@ const Initial = () => {
           <NotMobile>
             <Button
               target="_blank"
-              href="https://raw.githubusercontent.com/RaphaelBRodrigues/raphaelbrodrigues.github.io/master/RaphaelBarbosaRodrigues.pdf"
+              href="https://raw.githubusercontent.com/RaphaelBRodrigues/raphaelbr.dev/master/RaphaelBarbosaRodrigues.pdf"
               download="RaphaelBRodrigues.pdf"
             >
               Download CV

@@ -9,3 +9,4 @@ export const setMenu = (payload: boolean) => ({
   type: t.SET_MENU,
   payload
 })
+
