@@ -1,6 +1,6 @@
 import { DefaultNavigationState } from '@Types/contexts';
 import { createContext } from 'react';
-import { INITIAL_STATE } from './ducks/reducer';
+import { INITIAL_STATE } from './duck/reducer';
 
 
 
