@@ -13,6 +13,30 @@ const ButtonStyle = css`
   font-weight: 400;
   cursor: pointer;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  
+  
+  &:before {
+    transition-duration: 0.6s;
+    content: "";
+    display: block;
+    width: 25%;
+    height: 200%;
+    transform: rotate(-45deg);
+    top: 0;
+    left: -40%;
+    position: absolute;
+    background-color: ${({ theme }) => theme.colors.red};
+  }
+
+  &:hover {
+    color: white;
+    &:before {
+      left: -15%;
+    }
+  }
+
 
   @media(max-width:768px) {
     width: 100%;

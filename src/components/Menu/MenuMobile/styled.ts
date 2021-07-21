@@ -20,7 +20,7 @@ export const MenuWrapper = styled.ul<{ isMenuOpen: boolean }>`
   text-align: center;
   height: 100%;
 
-  svg {
+  >svg {
     width: 100%;
     top: 17%;
   }
@@ -57,6 +57,8 @@ export const MenuButton = styled.button<{ isMenuOpen: boolean }>`
       css`
         i {
           position: absolute;
+          transition: opacity 3s, transform 1s ;
+          opacity: 1;
 
           &:nth-child(1) {
             transform: rotate(45deg);
@@ -74,3 +76,24 @@ export const MenuButton = styled.button<{ isMenuOpen: boolean }>`
     );
   }}
 `;
+
+export const IconsWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  bottom: 3rem;
+
+  a {
+    width: 25%;
+
+    svg {
+      display: block;
+      width: 25%;
+      height: 25%;
+      opacity: 1;
+      fill: ${({ theme }) => theme.colors.white};
+    }
+  }
+`

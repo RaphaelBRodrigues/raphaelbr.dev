@@ -17,14 +17,14 @@ const BinaryTable: React.FC = () => {
   useEffect(() => {
     const updateTable = setInterval(() => {
       setMatrix((state) => {
-        return state.map((item) => {
+        return state.map(() => {
           return {
             highlighted: !!Math.round(Math.random() - 0.1),
             number: Math.round(Math.random()),
           };
         });
       });
-    }, 700);
+    }, 900);
 
     return () => {
       clearInterval(updateTable);
