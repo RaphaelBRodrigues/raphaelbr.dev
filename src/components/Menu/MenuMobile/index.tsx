@@ -32,7 +32,7 @@ const MenuMobile = () => {
         <i></i>
       </S.MenuButton>
       <S.MenuWrapper isMenuOpen={isMenuOpen}>
-        <Logo onClick={handleClick} />
+        <Logo role="application" onClick={handleClick} />
         <S.MenuList>
           <MenuItem stepName="initial"> .init()</MenuItem>
           <MenuItem disabled stepName="about">
@@ -51,14 +51,14 @@ const MenuMobile = () => {
             rel="noreferrer"
             href="https://www.linkedin.com/in/raphael-b-rodrigues-08b02889/"
           >
-            <Linkedin />
+            <Linkedin role="application" />
           </a>
           <a
             rel="noreferrer"
             target="_blank"
             href="https://github.com/RaphaelBRodrigues"
           >
-            <Github />
+            <Github role="application" />
           </a>
         </S.IconsWrapper>
       </S.MenuWrapper>

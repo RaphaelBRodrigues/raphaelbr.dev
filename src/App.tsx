@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavigationProvider } from '@Contexts/NavigationContext';
 
-import Initial from '@Sections/Initial';
 import { ThemeProvider } from '@Styles/index';
 import Header from '@Containers/Header/';
 import { GeneralProvider } from '@Contexts/GeneralContext/Provider';
+import Navigation from './Navigation';
+import FloatingCommits from '@Containers/FloatingCommits';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <NavigationProvider>
         <GeneralProvider>
           <Header />
-          <Initial />
+          <FloatingCommits />
+          <Navigation />
         </GeneralProvider>
       </NavigationProvider>
     </ThemeProvider>

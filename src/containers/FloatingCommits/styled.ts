@@ -8,7 +8,7 @@ const floatingText = (index: number) => keyframes`
     bottom: -${(Math.random() * index) * 8}%;
     
     @media(max-width: 768px) {
-      bottom: -${(Math.random() * index) * 2 + 30}%;
+      bottom: -${(Math.random() * index * 6) * 2 + 30}%;
     }
   }
   25% {
@@ -49,15 +49,17 @@ export const Commit = styled.span<{ index: number }>`
   opacity: 0;
   color: ${({ theme }) => theme.colors.darkPurple};
   font-size: 0.7rem;
-  display: block;
   white-space: nowrap;
   left: ${() => `${Math.random() * (100 - 10 + 1) + 5}vw`};
   position: absolute;
   animation: 120s ${({ index }) => floatingText(index)} infinite linear;
   margin: 8rem 0;
   padding: 24rem 0;
+  display: block;
+
   
   @media(max-width: 768px) {
+    display: ${({ index }) => index % 2 === 0 ? "block" : "none"};
     animation-duration: 80s;
     left: ${() => `${Math.random() * (80 - 10 + 1) + 5}vw`};
     margin: 8rem 0;

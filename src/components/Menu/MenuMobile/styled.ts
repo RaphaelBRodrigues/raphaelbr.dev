@@ -26,14 +26,14 @@ export const MenuWrapper = styled.div<{ isMenuOpen: boolean }>`
 
   >svg {
     width: 100%;
-    top: 17%;
+    top: 20%;
   }
 `;
 
 export const MenuList = styled.ul`
   padding: 0;
   gap: 2rem;
-  top: 1rem;
+  top: 3rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -99,13 +99,19 @@ export const IconsWrapper = styled.div`
   bottom: -5rem;
 
   a {
+    ${DontCopy}
     width: 25%;
+    opacity: 0.1;
+    transition-duration: 1s;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     svg {
       display: block;
       width: 25%;
       height: 25%;
-      opacity: 1;
       fill: ${({ theme }) => theme.colors.white};
     }
   }

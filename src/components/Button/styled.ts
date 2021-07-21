@@ -1,10 +1,12 @@
+import { DontCopy } from '@Styles/styled';
 import { StyledButton } from './index';
 import styled, { css } from 'styled-components';
 
 
 const ButtonStyle = css`
+  ${DontCopy} 
   background-color: transparent;
-  border: 2.5px solid ${({ theme }) => theme.colors.red};
+  border: 2px solid ${({ theme }) => theme.colors.red};
   color: ${({ theme }) => theme.colors.red};
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -25,7 +27,7 @@ const ButtonStyle = css`
     height: 200%;
     transform: rotate(-45deg);
     top: 0;
-    left: -40%;
+    left: -45%;
     position: absolute;
     background-color: ${({ theme }) => theme.colors.red};
   }

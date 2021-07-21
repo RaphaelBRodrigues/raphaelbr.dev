@@ -12,6 +12,11 @@ export const Header = styled.header`
     cursor: pointer;
   }
 
+  @media(min-width: 768px) {
+    position: fixed;
+    width: 85%;
+  }
+  
   @media(max-width: 768px) {
     flex-direction: column;
 
