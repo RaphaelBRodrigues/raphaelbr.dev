@@ -1,10 +1,6 @@
 import * as t from './types'
 
-const setCommits = (commits: Array<Object>) => ({
+export const setCommits = (commits: any) => ({
   type: t.COMMITS,
   payload: commits
 })
-
-export const fetchCommits = () => {
-
-}

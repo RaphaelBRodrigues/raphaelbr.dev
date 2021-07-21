@@ -14,5 +14,6 @@
     "**/.vscode": true,
     "**/.alias.json": true,
     "**/tsconfig.json": true,
+    "**/*.pdf": true,
   },
 }

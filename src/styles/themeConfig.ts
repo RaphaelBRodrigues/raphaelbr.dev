@@ -6,6 +6,7 @@
 const themeConfig = {
   colors: {
     purple: '#160000',
+    darkPurple: '#471515',
     white: '#fff',
     red: '#CA3E47',
     black: '#000',

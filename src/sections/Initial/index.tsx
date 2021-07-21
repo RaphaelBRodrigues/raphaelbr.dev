@@ -4,10 +4,12 @@ import Button from '@Components/Button/';
 import Title from '@Components/Title';
 import * as S from './styled';
 import { Mobile, NotMobile } from '@Components/Responsive';
+import FloatingCommits from '@Containers/FloatingCommits';
 
 const Initial = () => {
   return (
     <S.InitialWrapper>
+      <FloatingCommits />
       <NotMobile>
         <BinaryTable />
       </NotMobile>

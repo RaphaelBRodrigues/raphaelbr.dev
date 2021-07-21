@@ -5,8 +5,13 @@ export type DefaultNavigationState = {
   isMenuOpen: boolean,
 }
 
-export type DefaultGeneralState = {
+export type Commit = {
+  message: string,
+  sha: string
+}
 
+export type DefaultGeneralState = {
+  commits: Commit[]
 }
 
 
