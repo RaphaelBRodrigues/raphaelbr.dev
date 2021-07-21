@@ -22,23 +22,29 @@ const MenuMobile = () => {
 
   return (
     <>
-      <S.MenuButton onClick={handleClick} isMenuOpen={isMenuOpen}>
+      <S.MenuButton
+        aria-label="menu"
+        onClick={handleClick}
+        isMenuOpen={isMenuOpen}
+      >
         <i></i>
         <i></i>
         <i></i>
       </S.MenuButton>
-      <S.MenuWrapper isMenuOpen={!isMenuOpen}>
+      <S.MenuWrapper isMenuOpen={isMenuOpen}>
         <Logo onClick={handleClick} />
-        <MenuItem stepName="initial"> .init()</MenuItem>
-        <MenuItem disabled stepName="about">
-          .about()
-        </MenuItem>
-        <MenuItem disabled stepName="skills">
-          .skills()
-        </MenuItem>
-        <MenuItem disabled stepName="contact">
-          .contact()
-        </MenuItem>
+        <S.MenuList>
+          <MenuItem stepName="initial"> .init()</MenuItem>
+          <MenuItem disabled stepName="about">
+            .about()
+          </MenuItem>
+          <MenuItem disabled stepName="skills">
+            .skills()
+          </MenuItem>
+          <MenuItem disabled stepName="contact">
+            .contact()
+          </MenuItem>
+        </S.MenuList>
         <S.IconsWrapper>
           <a
             target="_blank"

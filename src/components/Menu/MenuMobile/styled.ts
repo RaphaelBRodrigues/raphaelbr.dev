@@ -1,29 +1,42 @@
 import { DontCopy } from '@Styles/styled';
 import styled, { css } from 'styled-components';
 
-export const MenuWrapper = styled.ul<{ isMenuOpen: boolean }>`
+export const MenuWrapper = styled.div<{ isMenuOpen: boolean }>`
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: ${({ isMenuOpen }) => isMenuOpen ? 0 : '-120vw'};
+  
   top: 0;
+  left: ${({ isMenuOpen }) => isMenuOpen ? 0 : '-120vw'};
   margin: 0;
-  padding: 4rem 0;
+  padding: 0;
+  
   z-index: 999;
+  background-color: rgba(0,0,0,0.99);
+  
+  width: 100%;
+  height: 100%;
+
+
   transition: left 1s;
   overflow-y: hidden;
-  gap: 2rem;
   justify-content: center;
   
-  background-color: rgba(0,0,0,0.99);
-  width: 100%;
   text-align: center;
-  height: 100%;
 
   >svg {
     width: 100%;
     top: 17%;
   }
+`;
+
+export const MenuList = styled.ul`
+  padding: 0;
+  gap: 2rem;
+  top: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const MenuButton = styled.button<{ isMenuOpen: boolean }>`
@@ -80,10 +93,10 @@ export const MenuButton = styled.button<{ isMenuOpen: boolean }>`
 export const IconsWrapper = styled.div`
   position: absolute;
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
-  bottom: 3rem;
+  bottom: -5rem;
 
   a {
     width: 25%;

@@ -8,7 +8,7 @@ import FloatingCommits from '@Containers/FloatingCommits';
 
 const Initial = () => {
   return (
-    <S.InitialWrapper>
+    <S.InitialWrapper aria-label="initial">
       <FloatingCommits />
       <NotMobile>
         <BinaryTable />
