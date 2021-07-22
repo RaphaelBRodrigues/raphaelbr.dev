@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ac00f22.chunk.css",
-    "main.js": "/static/js/main.60740f68.chunk.js",
-    "main.js.map": "/static/js/main.60740f68.chunk.js.map",
+    "main.css": "/static/css/main.15c82b4a.chunk.css",
+    "main.js": "/static/js/main.8181c46a.chunk.js",
+    "main.js.map": "/static/js/main.8181c46a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8bfa2dcb.js",
     "runtime-main.js.map": "/static/js/runtime-main.8bfa2dcb.js.map",
     "static/js/2.4ebf2c3b.chunk.js": "/static/js/2.4ebf2c3b.chunk.js",
     "static/js/2.4ebf2c3b.chunk.js.map": "/static/js/2.4ebf2c3b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4ac00f22.chunk.css.map": "/static/css/main.4ac00f22.chunk.css.map",
+    "static/css/main.15c82b4a.chunk.css.map": "/static/css/main.15c82b4a.chunk.css.map",
     "static/js/2.4ebf2c3b.chunk.js.LICENSE.txt": "/static/js/2.4ebf2c3b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/SegoeUI.b55d2891.woff2",
     "static/media/arrow.bdf9be5f.svg": "/static/media/arrow.bdf9be5f.svg",
     "static/media/github.197212f0.svg": "/static/media/github.197212f0.svg",
     "static/media/linkedin.27a3f479.svg": "/static/media/linkedin.27a3f479.svg",
-    "static/media/logo.7201bfb5.svg": "/static/media/logo.7201bfb5.svg"
+    "static/media/logo.7201bfb5.svg": "/static/media/logo.7201bfb5.svg",
+    "static/media/question_mark.0be8433e.svg": "/static/media/question_mark.0be8433e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8bfa2dcb.js",
     "static/js/2.4ebf2c3b.chunk.js",
-    "static/css/main.4ac00f22.chunk.css",
-    "static/js/main.60740f68.chunk.js"
+    "static/css/main.15c82b4a.chunk.css",
+    "static/js/main.8181c46a.chunk.js"
   ]
 }
