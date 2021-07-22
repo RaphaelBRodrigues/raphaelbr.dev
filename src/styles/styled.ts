@@ -17,10 +17,12 @@ export const Section = styled.section`
   width: 90%;
   justify-content: center;
   position: relative;
-  /* top: 35vh; */
-     
+  transition-timing-function: linear;
+  transition-duration: 1s;
+  
   @media(max-width:768px) {
     text-align: center;
+    transition-duration: 1.5s;
     top: 25vh;
   }
 `;

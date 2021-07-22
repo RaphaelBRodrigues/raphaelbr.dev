@@ -10,3 +10,11 @@ export const setMenu = (payload: boolean) => ({
   payload
 })
 
+export const nextStep = () => ({
+  type: t.NEXT_STEP,
+})
+
+export const prevStep = () => ({
+  type: t.PREV_STEP,
+})
+

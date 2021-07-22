@@ -2,10 +2,18 @@ import styled from 'styled-components';
 
 export const InitialWrapper = styled.div<{ isActive: boolean }>`
   section {
-    top: 35vh;
-
-    @media(max-width: 768px) {
-      top: 27vh;
+     top: ${({ isActive }) => isActive ? "35vh" : "115vh"};
+     
+     @media(max-width: 768px) {
+      top: ${({ isActive }) => isActive ? "25vh" : "115vh"};
+      flex-direction: column;
+  
+      svg {
+        position: absolute;
+        top: -35%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 `;

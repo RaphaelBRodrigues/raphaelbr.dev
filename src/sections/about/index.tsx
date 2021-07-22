@@ -5,6 +5,7 @@ import { Section } from '@Styles/styled';
 import React from 'react';
 import * as S from './styled';
 import { ReactComponent as QuestionIcon } from '@Assets/icons/question_mark.svg';
+import { NotMobile } from '@Components/Responsive';
 
 const About: React.FC<{ isActive: boolean }> = ({ isActive }) => {
   return (
@@ -12,14 +13,17 @@ const About: React.FC<{ isActive: boolean }> = ({ isActive }) => {
       <Section aria-label="About">
         <S.ContentWrapper>
           <Title>Who Am I?</Title>
-          <SubTitle>So, here i'm...</SubTitle>
+          <SubTitle>Well, i'm a software engineer</SubTitle>
           <Text>
-            My name is Raphael and i'm a dev! But I must explain to you how all
-            this mistaken idea of denouncing pleasure and praising pain was born
-            and I will give you a complete account of the system dasdas sadd
+            Studying computer science and with two years of experience in
+            software development, i already participated of many ecommerce
+            projects working with different technologies either back-end and
+            front-end
           </Text>
         </S.ContentWrapper>
-        <QuestionIcon />
+        <NotMobile>
+          <QuestionIcon />
+        </NotMobile>
       </Section>
     </S.AboutWrapper>
   );

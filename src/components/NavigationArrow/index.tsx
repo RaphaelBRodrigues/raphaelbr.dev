@@ -1,7 +1,8 @@
 import React from 'react';
 import * as S from './styled';
 import { ReactComponent as ArrowIcon } from '@Assets/icons/arrow.svg';
-import { Mobile } from '@Components/Responsive';
+import { useNavigationDispatch } from '@Hooks/useNavigationContext';
+import { nextStep, prevStep } from '@Contexts/NavigationContext';
 
 export type ButtonProps = {
   topArrow?: boolean;
@@ -9,12 +10,24 @@ export type ButtonProps = {
 };
 
 const NavigationArrow: React.FC<ButtonProps> = ({ topArrow, showArrow }) => {
+  const navigationDispatch = useNavigationDispatch();
+
+  const handleClick = () => {
+    if (topArrow) {
+      navigationDispatch(prevStep());
+    } else {
+      navigationDispatch(nextStep());
+    }
+  };
+
   return (
-    <S.ButtonWrapper topArrow={topArrow} showArrow={showArrow}>
+    <S.ButtonWrapper
+      onClick={handleClick}
+      topArrow={topArrow}
+      showArrow={showArrow}
+    >
       <ArrowIcon />
-      {/* <Mobile> */}
       <ArrowIcon />
-      {/* </Mobile> */}
     </S.ButtonWrapper>
   );
 };

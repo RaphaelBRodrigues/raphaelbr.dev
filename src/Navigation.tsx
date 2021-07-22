@@ -11,7 +11,7 @@ const Navigation = () => {
     <>
       <NavigationArrow topArrow showArrow={!isFirstStep} />
       <Initial isActive={currentStep === 'initial'} />
-      {/* <About isActive={currentStep === 'about'} /> */}
+      <About isActive={currentStep === 'about'} />
       <NavigationArrow showArrow={!isLastStep} />
     </>
   );

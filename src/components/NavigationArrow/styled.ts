@@ -19,30 +19,46 @@ const movementArrow = keyframes`
   }
 `;
 
-
 export const ButtonWrapper = styled.div<ButtonProps>`
   position: absolute;
-  opacity: ${({ showArrow }) => showArrow ? 1 : 0};
+  width: 100%;
+  z-index: 998;
+
+  svg {
+    &:nth-child(1) {
+      bottom: -0.8rem;
+      animation: 1s ${movementArrow} infinite;
+    }
+
+    height: 1.5rem;
+    left: 50%;
+    position: absolute;
+  }
+
+  cursor: ${({ showArrow }) => (showArrow ? 'pointer' : 'inherit')};
+
+  @media (max-width: 768px) {
+    opacity: ${({ showArrow }) => (showArrow ? 1 : 0)};
+  }
 
   ${({ topArrow }) => {
-    return topArrow ?
-      css`
-      background-color: green;
-    `
+    return topArrow
+      ? css`
+          svg {
+            transform: rotate(270deg);
+            left: 42%;
+          }
+        `
       : css`
-      svg {
-        &:nth-child(1) {
-          bottom: -0.8rem;
-          animation: 1s ${movementArrow} infinite;
-        }
-
-        height: 1.5rem;
-        transform: translateX(-50%) rotate(90deg);
-        left: 50%;
-        position: absolute;
-      }
-      bottom: 2.5rem;
-      width: 100%;
-    `
+          bottom: 2.5rem;
+          svg {
+            transform: translateX(-50%) rotate(90deg);
+          }
+        `;
   }}
+
+  @media(min-width: 768px) {
+    bottom: 3rem;
+    left: 2rem;
+  }
 `;

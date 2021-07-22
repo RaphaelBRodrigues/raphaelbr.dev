@@ -7,11 +7,20 @@ import { Mobile, NotMobile } from '@Components/Responsive';
 import { Section } from '@Styles/styled';
 import SubTitle from '@Components/SubTitle';
 import Text from '@Components/Text';
+import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
+import { useNavigationDispatch } from '@Hooks/useNavigationContext';
+import { setCurrentStep } from '@Contexts/NavigationContext';
 
 const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => {
+  const navigationDispatch = useNavigationDispatch();
+
   return (
     <S.InitialWrapper isActive={isActive}>
       <Section aria-label="initial">
+        <Mobile>
+          <Logo onClick={() => navigationDispatch(setCurrentStep('initial'))} />
+        </Mobile>
+
         <NotMobile>
           <BinaryTable />
         </NotMobile>

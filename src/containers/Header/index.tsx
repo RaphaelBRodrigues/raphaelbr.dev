@@ -10,8 +10,8 @@ const Header: React.FC = () => {
   const navigationDispatch = useNavigationDispatch();
   return (
     <S.Header>
-      <Logo onClick={() => navigationDispatch(setCurrentStep('initial'))} />
       <NotMobile>
+        <Logo onClick={() => navigationDispatch(setCurrentStep('initial'))} />
         <MenuDesktop />
       </NotMobile>
       <Mobile>

@@ -9,14 +9,14 @@ import * as S from './styled';
 import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
 import { ReactComponent as Linkedin } from '@Assets/icons/linkedin.svg';
 import { ReactComponent as Github } from '@Assets/icons/github.svg';
-import scrollBody from '@Utils/scroll';
+// import scrollBody from '@Utils/scroll';
 
 const MenuMobile = () => {
   const navigationDispatch = useNavigationDispatch();
   const { isMenuOpen } = useNavigationContext();
 
   const handleClick = () => {
-    scrollBody(!isMenuOpen);
+    // scrollBody(!isMenuOpen);
     navigationDispatch(setMenu(!isMenuOpen));
   };
 
@@ -35,9 +35,7 @@ const MenuMobile = () => {
         <Logo role="application" onClick={handleClick} />
         <S.MenuList>
           <MenuItem stepName="initial"> .init()</MenuItem>
-          <MenuItem disabled stepName="about">
-            .about()
-          </MenuItem>
+          <MenuItem stepName="about">.about()</MenuItem>
           <MenuItem disabled stepName="skills">
             .skills()
           </MenuItem>

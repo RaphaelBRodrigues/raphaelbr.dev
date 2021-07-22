@@ -6,6 +6,8 @@ export const Title = styled.h1`
   font-size: ${({ theme }) => theme.font.size.desktop.title};
   font-weight: 400;
 
+
+
  
   &::after {
     content: "";

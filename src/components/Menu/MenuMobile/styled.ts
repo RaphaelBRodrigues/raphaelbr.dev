@@ -15,7 +15,7 @@ export const MenuWrapper = styled.div<{ isMenuOpen: boolean }>`
   background-color: rgba(0,0,0,0.99);
   
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
 
   transition: left 1s;

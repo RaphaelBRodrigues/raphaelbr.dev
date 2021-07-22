@@ -6,9 +6,7 @@ const MenuDesktop = () => {
   return (
     <S.MenuWrapper>
       <MenuItem stepName="initial">.init()</MenuItem>
-      <MenuItem disabled stepName="about">
-        .about()
-      </MenuItem>
+      <MenuItem stepName="about">.about()</MenuItem>
       <MenuItem disabled stepName="skills">
         .skills()
       </MenuItem>
