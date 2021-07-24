@@ -1,3 +1,4 @@
+import { DontCopy } from './../../styles/styled';
 import { ButtonProps } from './index';
 import styled, { css, keyframes } from 'styled-components';
 
@@ -23,6 +24,7 @@ export const ButtonWrapper = styled.div<ButtonProps>`
   position: absolute;
   width: 100%;
   z-index: 998;
+  ${DontCopy}
 
   svg {
     &:nth-child(1) {

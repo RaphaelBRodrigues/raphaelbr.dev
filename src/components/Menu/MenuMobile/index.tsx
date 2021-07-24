@@ -16,7 +16,6 @@ const MenuMobile = () => {
   const { isMenuOpen } = useNavigationContext();
 
   const handleClick = () => {
-    // scrollBody(!isMenuOpen);
     navigationDispatch(setMenu(!isMenuOpen));
   };
 

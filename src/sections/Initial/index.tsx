@@ -48,7 +48,8 @@ const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => {
                 target="_blank"
                 href="https://raw.githubusercontent.com/RaphaelBRodrigues/raphaelbr.dev/master/RaphaelBarbosaRodrigues.pdf"
                 download="RaphaelBRodrigues.pdf"
-                title="Curriculum"
+                aria-label="Download my resume"
+                rel="noreferrer"
               >
                 Download CV
               </Button>
@@ -56,7 +57,8 @@ const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => {
             <Button
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5511965482567"
-              title="WhatsApp"
+              aria-label="Contact me through whatsapp"
+              rel="noreferrer"
             >
               Contact Me
             </Button>

@@ -4,7 +4,7 @@ export const BinaryWrapper = styled.div`
   width: 45%;
   display: flex;
   justify-content: center;
-`;
+ `;
 
 export const Table = styled.div`
   display: grid;

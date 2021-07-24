@@ -15,6 +15,7 @@ type Props = {
   href?: string;
   target?: string;
   title?: string;
+  rel?: string;
 } & StyledButton;
 
 const Button: React.FC<Props> = ({

@@ -16,7 +16,7 @@ const About: React.FC<{ isActive: boolean }> = ({ isActive }) => {
           <SubTitle>Well, i'm a software engineer</SubTitle>
           <Text>
             Studying computer science and with two years of experience in
-            software development, i already participated of many ecommerce
+            software development, i've already participated of many ecommerce
             projects working with different technologies either back-end and
             front-end
           </Text>

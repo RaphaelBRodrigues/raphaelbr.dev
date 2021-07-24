@@ -96,7 +96,7 @@ export const IconsWrapper = styled.div`
   height: 25vh;
   display: flex;
   justify-content: center;
-  bottom: -5rem;
+  bottom: 0.5rem;
 
   a {
     ${DontCopy}

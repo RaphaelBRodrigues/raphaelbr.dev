@@ -16,6 +16,11 @@ export const Header = styled.header`
     position: fixed;
     width: 85%;
   }
+
+  @media(min-width: 1760px) {
+     width: 70%;
+    left: 10%;
+  }
   
   @media(max-width: 768px) {
     flex-direction: column;

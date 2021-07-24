@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const InitialWrapper = styled.div<{ isActive: boolean }>`
   section {
      top: ${({ isActive }) => isActive ? "35vh" : "115vh"};
+     z-index: ${({ isActive }) => (isActive ? 998 : 2)};
+ 
      
      @media(max-width: 768px) {
       top: ${({ isActive }) => isActive ? "25vh" : "115vh"};
@@ -20,11 +22,12 @@ export const InitialWrapper = styled.div<{ isActive: boolean }>`
 
 
 export const DescriptionWrapper = styled.div`
-  width: 55%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: -0.5rem;
+     
 
   @media(max-width:768px) {
     width: 100%;
