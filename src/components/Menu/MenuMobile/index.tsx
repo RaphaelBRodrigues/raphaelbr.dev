@@ -30,7 +30,7 @@ const MenuMobile = () => {
         <i></i>
         <i></i>
       </S.MenuButton>
-      <S.MenuWrapper isMenuOpen={isMenuOpen}>
+      <S.MenuWrapper role="menu" isMenuOpen={isMenuOpen}>
         <Logo role="application" onClick={handleClick} />
         <S.MenuList>
           <MenuItem stepName="initial"> .init()</MenuItem>

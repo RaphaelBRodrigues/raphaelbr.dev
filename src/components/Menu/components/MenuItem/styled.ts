@@ -7,8 +7,9 @@ export const MenuItem = styled.li<{ isSelected: Boolean }>`
   font-size: ${({ theme }) => theme.font.size.mobile.subtitle};
   font-family: ${({ theme }) => theme.font.family.terciary};
   cursor: pointer;
+  color: ${({ theme }) => theme.colors.white};
 
   ${({ isSelected }) => isSelected && css`
-    color: ${({ theme }) => theme.colors.red}
+    color: ${({ theme }) => theme.colors.red};
   `}
 `;

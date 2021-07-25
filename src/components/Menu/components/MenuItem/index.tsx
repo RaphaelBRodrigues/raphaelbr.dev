@@ -21,7 +21,12 @@ const MenuItem: React.FC<Props> = ({ stepName, disabled, children }) => {
   };
 
   return (
-    <S.MenuItem onClick={handleClick} isSelected={stepName === currentStep}>
+    <S.MenuItem
+      data-testid={stepName}
+      role="menuItem"
+      onClick={handleClick}
+      isSelected={stepName === currentStep}
+    >
       {children}
     </S.MenuItem>
   );

@@ -20,13 +20,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "typeRoots": ["./src/types/contexts.ts"]
+    "typeRoots": ["./src/types/contexts.ts"],
+    "types": ["@types/jest"] 
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
     "./node_modules/**/*",
-    "dist"
+    "dist",
   ], 
 }
