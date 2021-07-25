@@ -4,7 +4,7 @@ import * as S from './styled';
 
 const MenuDesktop = () => {
   return (
-    <S.MenuWrapper role="menu">
+    <S.MenuWrapper>
       <MenuItem stepName="initial">.init()</MenuItem>
       <MenuItem stepName="about">.about()</MenuItem>
       <MenuItem disabled stepName="skills">

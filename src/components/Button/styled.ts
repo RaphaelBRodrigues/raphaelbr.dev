@@ -16,8 +16,7 @@ const ButtonStyle = css`
   cursor: pointer;
   text-align: center;
   overflow: hidden;
-  position: relative;
-  
+  position: relative;  
   
   &:before {
     transition-duration: 0.6s;
