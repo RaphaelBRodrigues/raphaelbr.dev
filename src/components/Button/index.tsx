@@ -24,14 +24,12 @@ const Button: React.FC<Props> = ({
   href,
   download,
   ...props
-}) => {
-  return href ? (
-    <S.Link href={href} download={download} title={title} {...props}>
-      {children}
-    </S.Link>
-  ) : (
-    <S.Button {...props}>{children}</S.Button>
-  );
-};
+}) => (href ? (
+  <S.Link href={href} download={download} title={title} {...props}>
+    {children}
+  </S.Link>
+) : (
+  <S.Button {...props}>{children}</S.Button>
+));
 
 export default Button;

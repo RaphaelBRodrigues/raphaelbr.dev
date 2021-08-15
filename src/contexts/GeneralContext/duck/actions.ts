@@ -1,6 +1,6 @@
-import * as t from './types'
+import * as t from './types';
 
 export const setCommits = (commits: any) => ({
   type: t.COMMITS,
-  payload: commits
-})
+  payload: commits,
+});

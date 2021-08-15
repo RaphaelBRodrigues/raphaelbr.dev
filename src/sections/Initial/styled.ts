@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const InitialWrapper = styled.div<{ isActive: boolean }>`
   section {
-     top: ${({ isActive }) => isActive ? "35vh" : "115vh"};
+     top: ${({ isActive }) => (isActive ? '35vh' : '115vh')};
      z-index: ${({ isActive }) => (isActive ? 998 : 2)};
  
      
      @media(max-width: 768px) {
-      top: ${({ isActive }) => isActive ? "25vh" : "115vh"};
+      top: ${({ isActive }) => (isActive ? '25vh' : '115vh')};
       flex-direction: column;
   
       svg {
@@ -19,7 +19,6 @@ export const InitialWrapper = styled.div<{ isActive: boolean }>`
     }
   }
 `;
-
 
 export const DescriptionWrapper = styled.div`
   width: 50%;
@@ -36,7 +35,6 @@ export const DescriptionWrapper = styled.div`
 
 export const TextWrapper = styled.div``;
 
-
 export const ButtonsWrapper = styled.div`
   display: flex;
   gap: 1rem;  
@@ -46,4 +44,4 @@ export const ButtonsWrapper = styled.div`
     margin: 1rem auto;
     width: 85%;
   }
-`
+`;

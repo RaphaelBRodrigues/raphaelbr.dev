@@ -1,6 +1,8 @@
-import { DontCopy } from './../../styles/styled';
+import styled, {
+  css, keyframes,
+} from 'styled-components';
+import { DontCopy } from '../../styles/styled';
 import { ButtonProps } from './index';
-import styled, { css, keyframes } from 'styled-components';
 
 const movementArrow = keyframes`
   0%{
@@ -43,21 +45,19 @@ export const ButtonWrapper = styled.div<ButtonProps>`
     opacity: ${({ showArrow }) => (showArrow ? 1 : 0)};
   }
 
-  ${({ topArrow }) => {
-    return topArrow
-      ? css`
+  ${({ topArrow }) => (topArrow
+    ? css`
           svg {
             transform: rotate(270deg);
             left: 42%;
           }
         `
-      : css`
+    : css`
           bottom: 2.5rem;
           svg {
             transform: translateX(-50%) rotate(90deg);
           }
-        `;
-  }}
+        `)}
 
   @media(min-width: 768px) {
     bottom: 3rem;

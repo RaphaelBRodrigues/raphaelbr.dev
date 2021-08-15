@@ -1,6 +1,12 @@
-import { GeneralContext, GeneralDispatch } from './Context';
-import React, { useEffect, useReducer } from 'react';
-import { INITIAL_STATE, reducer } from './duck/reducer';
+import React, {
+  useEffect, useReducer,
+} from 'react';
+import {
+  GeneralContext, GeneralDispatch,
+} from './Context';
+import {
+  INITIAL_STATE, reducer,
+} from './duck/reducer';
 import { setCommits } from './duck/actions';
 import { getCommits } from './duck/utils';
 

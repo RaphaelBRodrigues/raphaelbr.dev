@@ -7,7 +7,7 @@ export const MenuWrapper = styled.div<{ isMenuOpen: boolean }>`
   position: absolute;
   
   top: 0;
-  left: ${({ isMenuOpen }) => isMenuOpen ? 0 : '-120vw'};
+  left: ${({ isMenuOpen }) => (isMenuOpen ? 0 : '-120vw')};
   margin: 0;
   padding: 0;
   
@@ -64,10 +64,9 @@ export const MenuButton = styled.button<{ isMenuOpen: boolean }>`
     opacity: 1;
   }
 
-  ${({ isMenuOpen }) => {
-    return (
-      isMenuOpen &&
-      css`
+  ${({ isMenuOpen }) => (
+    isMenuOpen
+      && css`
         i {
           position: absolute;
           transition: opacity 3s, transform 1s ;
@@ -86,8 +85,7 @@ export const MenuButton = styled.button<{ isMenuOpen: boolean }>`
           }
         }
       `
-    );
-  }}
+  )}
 `;
 
 export const IconsWrapper = styled.div`
@@ -115,4 +113,4 @@ export const IconsWrapper = styled.div`
       fill: ${({ theme }) => theme.colors.white};
     }
   }
-`
+`;

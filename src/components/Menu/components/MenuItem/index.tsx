@@ -1,4 +1,6 @@
-import { setCurrentStep, setMenu } from '@Contexts/NavigationContext';
+import {
+  setCurrentStep, setMenu,
+} from '@Contexts/NavigationContext';
 import {
   useNavigationContext,
   useNavigationDispatch,
@@ -11,7 +13,9 @@ type Props = {
   disabled?: boolean;
 };
 
-const MenuItem: React.FC<Props> = ({ stepName, disabled, children }) => {
+const MenuItem: React.FC<Props> = ({
+  stepName, disabled, children,
+}) => {
   const { currentStep } = useNavigationContext();
   const navigationDispatch = useNavigationDispatch();
 

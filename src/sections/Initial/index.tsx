@@ -2,14 +2,16 @@ import React from 'react';
 import BinaryTable from '@Components/BinaryTable';
 import Button from '@Components/Button/';
 import Title from '@Components/Title';
-import * as S from './styled';
-import { Mobile, NotMobile } from '@Components/Responsive';
+import {
+  Mobile, NotMobile,
+} from '@Components/Responsive';
 import { Section } from '@Styles/styled';
 import SubTitle from '@Components/SubTitle';
 import Text from '@Components/Text';
 import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
 import { useNavigationDispatch } from '@Hooks/useNavigationContext';
 import { setCurrentStep } from '@Contexts/NavigationContext';
+import * as S from './styled';
 
 const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => {
   const navigationDispatch = useNavigationDispatch();
@@ -37,8 +39,16 @@ const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => {
             </NotMobile>
             <Mobile>
               <Text>
-                And this is my personal website, i really <br /> hope you enjoy
-                and undestand <br /> a little about me
+                And this is my personal website, i really
+                {' '}
+                <br />
+                {' '}
+                hope you enjoy
+                and undestand
+                {' '}
+                <br />
+                {' '}
+                a little about me
               </Text>
             </Mobile>
           </S.TextWrapper>

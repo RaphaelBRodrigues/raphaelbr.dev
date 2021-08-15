@@ -1,7 +1,6 @@
 import { DontCopy } from '@Styles/styled';
-import { StyledButton } from './index';
 import styled, { css } from 'styled-components';
-
+import { StyledButton } from './index';
 
 const ButtonStyle = css`
   ${DontCopy} 
@@ -42,7 +41,7 @@ const ButtonStyle = css`
   @media(max-width:768px) {
     width: 100%;
   }
-`
+`;
 export const Button = styled.button<StyledButton>`
   ${ButtonStyle}
 `;

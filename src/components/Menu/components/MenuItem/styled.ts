@@ -1,6 +1,5 @@
 import { DontCopy } from '@Styles/styled';
-import styled, { css } from 'styled-components'
-
+import styled, { css } from 'styled-components';
 
 export const MenuItem = styled.li<{ isSelected: Boolean }>`
   ${DontCopy}

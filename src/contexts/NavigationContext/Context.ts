@@ -2,12 +2,10 @@ import { DefaultNavigationState } from '@Types/contexts';
 import { createContext } from 'react';
 import { INITIAL_STATE } from './duck/reducer';
 
-
-
 const NavigationContext = createContext<DefaultNavigationState>(INITIAL_STATE);
 
-const NavigationDispatch = createContext<React.Dispatch<any>>(() => {
-  return null;
-});
+const NavigationDispatch = createContext<React.Dispatch<any>>(() => null);
 
-export { NavigationContext, NavigationDispatch };
+export {
+  NavigationContext, NavigationDispatch,
+};

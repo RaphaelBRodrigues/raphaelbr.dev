@@ -7,13 +7,16 @@ const FloatingCommits = () => {
 
   return (
     <S.FloatingCommitsWrapper>
-      {commits.map(({ message, sha }, index) => {
-        return (
-          <S.Commit key={sha} index={index}>
-            {sha.slice(0, 6)} | {message}
-          </S.Commit>
-        );
-      })}
+      {commits.map(({
+        message, sha,
+      }, index) => (
+        <S.Commit key={sha} index={index}>
+          {sha.slice(0, 6)}
+          {' '}
+          |
+          {message}
+        </S.Commit>
+      ))}
     </S.FloatingCommitsWrapper>
   );
 };

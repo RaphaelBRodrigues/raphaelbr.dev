@@ -1,4 +1,3 @@
-
 export default function isMobile() {
   const toMatch = [
     /Android/i,
@@ -7,10 +6,8 @@ export default function isMobile() {
     /iPad/i,
     /iPod/i,
     /BlackBerry/i,
-    /Windows Phone/i
+    /Windows Phone/i,
   ];
 
-  return toMatch.some((toMatchItem) => {
-    return navigator.userAgent.match(toMatchItem);
-  });
+  return toMatch.some((toMatchItem) => navigator.userAgent.match(toMatchItem));
 }

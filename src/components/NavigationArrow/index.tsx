@@ -1,15 +1,19 @@
 import React from 'react';
-import * as S from './styled';
 import { ReactComponent as ArrowIcon } from '@Assets/icons/arrow.svg';
 import { useNavigationDispatch } from '@Hooks/useNavigationContext';
-import { nextStep, prevStep } from '@Contexts/NavigationContext';
+import {
+  nextStep, prevStep,
+} from '@Contexts/NavigationContext';
+import * as S from './styled';
 
 export type ButtonProps = {
   topArrow?: boolean;
   showArrow?: boolean;
 };
 
-const NavigationArrow: React.FC<ButtonProps> = ({ topArrow, showArrow }) => {
+const NavigationArrow: React.FC<ButtonProps> = ({
+  topArrow, showArrow,
+}) => {
   const navigationDispatch = useNavigationDispatch();
 
   const handleClick = () => {

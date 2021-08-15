@@ -4,8 +4,8 @@ import { NavigationProvider } from '@Contexts/NavigationContext';
 import { ThemeProvider } from '@Styles/index';
 import Header from '@Containers/Header/';
 import { GeneralProvider } from '@Contexts/GeneralContext/Provider';
-import Navigation from './Navigation';
 import FloatingCommits from '@Containers/FloatingCommits';
+import Navigation from './Navigation';
 
 function App() {
   return (

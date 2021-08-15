@@ -9,9 +9,7 @@ describe('Testing Header Component', () => {
 
     const $menuItem = getByTestId('initial');
 
-    expect($menuItem).toHaveStyle({
-      color: themeConfig.colors.red,
-    });
+    expect($menuItem).toHaveStyle({ color: themeConfig.colors.red });
   });
 
   it('should have the .about() item selected', () => {
@@ -22,25 +20,17 @@ describe('Testing Header Component', () => {
 
     fireEvent.click($aboutItem);
 
-    expect($intialItem).toHaveStyle({
-      color: themeConfig.colors.white,
-    });
+    expect($intialItem).toHaveStyle({ color: themeConfig.colors.white });
 
-    expect($aboutItem).toHaveStyle({
-      color: themeConfig.colors.red,
-    });
+    expect($aboutItem).toHaveStyle({ color: themeConfig.colors.red });
   });
 
   it("shouldn't change the menu if the .skills or .contact are clicked", () => {
     const { getByTestId } = renderWithProviders(<MenuMobile />);
 
-    const unselectedStyle = {
-      color: themeConfig.colors.white,
-    };
+    const unselectedStyle = { color: themeConfig.colors.white };
 
-    const selectedStyle = {
-      color: themeConfig.colors.red,
-    };
+    const selectedStyle = { color: themeConfig.colors.red };
 
     const $initialItem = getByTestId('initial');
     const $aboutItem = getByTestId('about');

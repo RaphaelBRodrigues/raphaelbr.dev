@@ -1,24 +1,23 @@
+import {
+  DefaultGeneralState, Action,
+} from '@Types/contexts';
 
-import { DefaultGeneralState } from '@Types/contexts';
-import { Action } from '@Types/contexts';
-import * as t from './types'
+import * as t from './types';
 
-export const INITIAL_STATE: DefaultGeneralState = {
-  commits: []
-}
+export const INITIAL_STATE: DefaultGeneralState = { commits: [] };
 
-
-export function reducer(state: DefaultGeneralState, { payload, type }: Action) {
-
+export function reducer(state: DefaultGeneralState, {
+  payload, type,
+}: Action) {
   switch (type) {
     case t.COMMITS: {
       return {
         ...state,
-        commits: payload
-      }
+        commits: payload,
+      };
     }
     default: {
-      return state
+      return state;
     }
   }
 }

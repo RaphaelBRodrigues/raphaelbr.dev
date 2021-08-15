@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BinaryWrapper = styled.div`
   width: 45%;
@@ -20,7 +20,8 @@ export const Table = styled.div`
 `;
 
 export const Item = styled.span<{ highlighted: Boolean }>`
-  color: ${({ highlighted, theme }) => highlighted ? theme.colors.red : theme.colors.gray};
+  color: ${({
+    highlighted, theme,
+  }) => (highlighted ? theme.colors.red : theme.colors.gray)};
   width: min-content;
 `;
-

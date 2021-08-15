@@ -4,11 +4,11 @@ import {
   useNavigationContext,
   useNavigationDispatch,
 } from '@Hooks/useNavigationContext';
-import MenuItem from '../components/MenuItem';
-import * as S from './styled';
 import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
 import { ReactComponent as Linkedin } from '@Assets/icons/linkedin.svg';
 import { ReactComponent as Github } from '@Assets/icons/github.svg';
+import * as S from './styled';
+import MenuItem from '../components/MenuItem';
 // import scrollBody from '@Utils/scroll';
 
 const MenuMobile = () => {
@@ -26,9 +26,9 @@ const MenuMobile = () => {
         onClick={handleClick}
         isMenuOpen={isMenuOpen}
       >
-        <i></i>
-        <i></i>
-        <i></i>
+        <i />
+        <i />
+        <i />
       </S.MenuButton>
       <S.MenuWrapper isMenuOpen={isMenuOpen}>
         <Logo role="application" onClick={handleClick} />

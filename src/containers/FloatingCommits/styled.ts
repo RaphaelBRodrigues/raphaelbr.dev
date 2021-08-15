@@ -59,7 +59,7 @@ export const Commit = styled.span<{ index: number }>`
 
   
   @media(max-width: 768px) {
-    display: ${({ index }) => index % 2 === 0 ? "block" : "none"};
+    display: ${({ index }) => (index % 2 === 0 ? 'block' : 'none')};
     animation-duration: 80s;
     left: ${() => `${Math.random() * (80 - 10 + 1) + 5}vw`};
     margin: 8rem 0;

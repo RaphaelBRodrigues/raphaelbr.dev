@@ -5,7 +5,9 @@ import { useNavigationContext } from '@Hooks/useNavigationContext';
 import NavigationArrow from '@Components/NavigationArrow';
 
 const Navigation = () => {
-  const { currentStep, isFirstStep, isLastStep } = useNavigationContext();
+  const {
+    currentStep, isFirstStep, isLastStep,
+  } = useNavigationContext();
 
   return (
     <>
