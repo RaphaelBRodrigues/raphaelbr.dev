@@ -21,8 +21,13 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'import/prefer-default-export': ['off'],
+    'react/jsx-props-no-spreading': ['off'],
+    'react/prop-types': ['off'],
+    'react/no-unescaped-entities': ['off'],
     'no-mixed-spaces-and-tabs': ['off'],
 		'key-spacing': ['error', { 'afterColon': true }],
+    'react/no-array-index-key': ['off'],
 		'@typescript-eslint/no-var-requires': ['error'],
 		'@typescript-eslint/ban-types': ['off'],
 		'object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],

@@ -1,6 +1,6 @@
 import { DontCopy } from '@Styles/styled';
 import styled, { css } from 'styled-components';
-import { StyledButton } from './index';
+import { StyledButton } from './types';
 
 const ButtonStyle = css`
   ${DontCopy} 

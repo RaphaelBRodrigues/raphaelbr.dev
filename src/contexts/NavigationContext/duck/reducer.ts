@@ -16,8 +16,7 @@ export function reducer(state: DefaultNavigationState, {
   payload, type,
 }: Action): DefaultNavigationState {
   switch (type) {
-    case t.SET_CURRENT_STEP:
-
+    case t.SET_CURRENT_STEP: {
       const newStepIndex = SECTIONS.findIndex((section) => section === payload);
 
       return {
@@ -26,8 +25,8 @@ export function reducer(state: DefaultNavigationState, {
         isFirstStep: newStepIndex === 0,
         isLastStep: newStepIndex + 1 === sectionsLength,
       };
-    case t.NEXT_STEP:
-
+    }
+    case t.NEXT_STEP: {
       const currentStepIndex = SECTIONS.findIndex((section) => section === state.currentStep);
       const nextStepIndex = currentStepIndex + 1;
       const nextStep = SECTIONS[nextStepIndex];
@@ -42,6 +41,8 @@ export function reducer(state: DefaultNavigationState, {
         currentStep: nextStep,
         isFirstStep: false,
       };
+    }
+
     case t.PREV_STEP: {
       const currentStepIndex = SECTIONS.findIndex((section) => section === state.currentStep);
 

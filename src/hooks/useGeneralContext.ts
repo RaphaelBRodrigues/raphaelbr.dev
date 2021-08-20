@@ -1,6 +1,7 @@
-import { GeneralContext, GeneralDispatch } from '@Contexts/GeneralContext';
+import {
+  GeneralContext, GeneralDispatch,
+} from '@Contexts/GeneralContext';
 import { useContext } from 'react';
-
 
 const useGeneralContext = () => {
   const state = useContext(GeneralContext);
@@ -12,9 +13,8 @@ const useGeneralDispatch = () => {
   const dispatch = useContext(GeneralDispatch);
 
   return dispatch;
-}
+};
 
-
-
-export { useGeneralContext, useGeneralDispatch };
-
+export {
+  useGeneralContext, useGeneralDispatch,
+};

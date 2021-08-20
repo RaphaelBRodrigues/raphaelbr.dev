@@ -5,11 +5,7 @@ import {
   nextStep, prevStep,
 } from '@Contexts/NavigationContext';
 import * as S from './styled';
-
-export type ButtonProps = {
-  topArrow?: boolean;
-  showArrow?: boolean;
-};
+import { ButtonProps } from './types';
 
 const NavigationArrow: React.FC<ButtonProps> = ({
   topArrow, showArrow,

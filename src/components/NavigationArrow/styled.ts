@@ -2,7 +2,7 @@ import styled, {
   css, keyframes,
 } from 'styled-components';
 import { DontCopy } from '../../styles/styled';
-import { ButtonProps } from './index';
+import { ButtonProps } from './types';
 
 const movementArrow = keyframes`
   0%{

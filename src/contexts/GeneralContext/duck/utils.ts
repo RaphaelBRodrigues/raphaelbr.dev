@@ -9,7 +9,8 @@ export async function getCommits() {
   const pushEvents = events
     .filter((event: { type: string }) => event.type === 'PushEvent');
 
-  const commits = pushEvents.map((pushEvent: { payload: { commits: Commit[] } }) => pushEvent.payload.commits[0]);
+  const commits = pushEvents
+    .map((pushEvent: { payload: { commits: Commit[] } }) => pushEvent.payload.commits[0]);
 
   return isMobile() ? commits.slice(0, 25) : commits;
 }

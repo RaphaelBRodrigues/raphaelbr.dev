@@ -1,11 +1,6 @@
 import React from 'react';
 import * as S from './styled';
-
-export type StyledButton = {
-  outline?: boolean;
-  disabled?: boolean;
-  captalize?: boolean;
-};
+import { StyledButton } from './types';
 
 type Props = {
   children?: React.ReactNode;
