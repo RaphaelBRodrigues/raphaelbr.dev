@@ -9,6 +9,12 @@ declare namespace NodeJS {
   }
 }
 
+declare global {
+  interface Window {
+    matchMedia: any;
+  }
+}
+
 declare module '*.avif' {
   const src: string;
   export default src;
