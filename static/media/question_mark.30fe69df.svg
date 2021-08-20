@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="344.417" height="314.423" viewBox="0 0 344.417 314.423">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_10" data-name="Retângulo 10" width="344.417" height="314.423" transform="translate(0)" fill="#525252" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_1" data-name="Grupo de máscara 1" transform="translate(344.417 314.423) rotate(-180)" opacity="0.44" clip-path="url(#clip-path)">
+    <g id="question-mark-svgrepo-com" transform="translate(68.536)" opacity="0.31">
+      <path id="Caminho_3" data-name="Caminho 3" d="M99.417,0C153.8,0,207.346,25.047,207.346,84.958c0,55.248-63.31,76.5-76.906,96.459-10.207,14.85-6.8,35.716-34.843,35.716-18.269,0-27.193-14.86-27.193-28.456,0-50.6,74.339-62.046,74.339-103.708,0-22.931-15.261-36.528-40.769-36.528-54.386,0-33.149,56.07-74.339,56.07C12.764,104.51,0,95.586,0,78.6-.01,36.929,47.567,0,99.417,0ZM97.3,244.716a34.853,34.853,0,1,1-34.853,34.853A35.01,35.01,0,0,1,97.3,244.716Z" fill="#525252"/>
+    </g>
+  </g>
+</svg>
