@@ -34,7 +34,7 @@ const MenuMobile = () => {
         <Logo role="application" onClick={handleClick} />
         <S.MenuList>
           <MenuItem stepName="initial"> .init()</MenuItem>
-          <MenuItem stepName="about">.about()</MenuItem>
+          <MenuItem disabled stepName="about">.about()</MenuItem>
           <MenuItem disabled stepName="skills">
             .skills()
           </MenuItem>

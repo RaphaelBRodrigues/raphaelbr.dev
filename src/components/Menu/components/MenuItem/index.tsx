@@ -14,7 +14,7 @@ type Props = {
 };
 
 const MenuItem: React.FC<Props> = ({
-  stepName, disabled, children,
+  stepName, disabled = false, children,
 }) => {
   const { currentStep } = useNavigationContext();
   const navigationDispatch = useNavigationDispatch();
@@ -29,10 +29,13 @@ const MenuItem: React.FC<Props> = ({
       data-testid={stepName}
       onClick={handleClick}
       isSelected={stepName === currentStep}
+      isDisabled={disabled}
     >
       {children}
     </S.MenuItem>
   );
 };
+
+MenuItem.defaultProps = { disabled: false };
 
 export default MenuItem;

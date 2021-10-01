@@ -27,4 +27,15 @@ const Button: React.FC<Props> = ({
   <S.Button {...props}>{children}</S.Button>
 ));
 
+Button.defaultProps = {
+  children: null,
+  onClick: () => {},
+  download: 'false',
+  title: '',
+  href: '#',
+  target: '#',
+  rel: '',
+  props: {},
+};
+
 export default Button;
