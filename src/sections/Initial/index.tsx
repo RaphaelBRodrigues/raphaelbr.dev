@@ -32,23 +32,27 @@ const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => {
             <SubTitle>My name is Raphael</SubTitle>
             <NotMobile>
               <Text>
-                And this is my personal website, i really hope you enjoy and
-                <br />
-                undestand a little about me
+                And i'm a curious developer looking forward to work on amazing things,
+                if you are looking for someone like that fell free to contact me!
               </Text>
             </NotMobile>
             <Mobile>
               <Text>
-                And this is my personal website, i really
+                And i'm a curious developer looking forward to work
+                <br />
+                on amazing things, if you are looking for someone
+                <br />
+                like that fell free to contact me!
+                {/* And this is my personal website, i really */}
                 {' '}
                 <br />
                 {' '}
-                hope you enjoy
-                and undestand
+                {/* hope you enjoy */}
+                {/* and undestand */}
                 {' '}
                 <br />
                 {' '}
-                a little about me
+                {/* a little about me */}
               </Text>
             </Mobile>
           </S.TextWrapper>
