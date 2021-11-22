@@ -38,11 +38,11 @@ const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => {
             </NotMobile>
             <Mobile>
               <Text>
-                And i'm a curious developer looking forward to work
+                And i'm a curious developer looking forward to
                 <br />
-                on amazing things, if you are looking for someone
+                work on amazing things, if you are looking for
                 <br />
-                like that fell free to contact me!
+                someone like that fell free to contact me!
                 {/* And this is my personal website, i really */}
                 {' '}
                 <br />
