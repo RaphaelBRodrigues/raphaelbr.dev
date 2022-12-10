@@ -1,0 +1,9 @@
+<svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="0.5" x2="42" y2="0.5"  class="alternate"/>
+<line x1="0.0119014" y1="21.5001" x2="42.0119" y2="22.5001"  class="alternate"/>
+<line x1="0.21023" y1="21.5463" x2="41.2102" y2="40.5463"  class="alternate"/>
+<line x1="41.5" y1="22" x2="41.5" y2="41" class="solid" />
+<line x1="41.5" y1="23" x2="41.5" y2="1"  class="alternate"/>
+<line x1="0.5" x2="0.5" y2="41"  class="alternate"/>
+<line x1="3.36987e-09" y1="40.5" x2="42" y2="40.5" class="solid" />
+</svg>
