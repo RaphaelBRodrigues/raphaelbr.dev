@@ -32,7 +32,6 @@ const Logo: React.FC<{
       staticMode={!!staticMode}
       step={currentLogo}
     >
-      dsad
       <LogoIcon />
     </S.LogoWrapper>
   );
