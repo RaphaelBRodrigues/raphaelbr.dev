@@ -12,13 +12,20 @@ export const MenuItem = styled.li<StyledMenuItem>`
   font-family: ${({ theme }) => theme.font.family.terciary};
   cursor: pointer;
   color: ${({ theme }) => theme.colors.white};
+  opacity: 0.2;
 
   ${({ isDisabled }) => isDisabled && css`
     opacity: 0.05;
     cursor: default;
   `}
 
-  ${({ isSelected }) => isSelected && css`
+  &:hover {
     color: ${({ theme }) => theme.colors.red};
+    opacity: 1;
+  }
+
+   ${({ isSelected }) => isSelected && css`
+    color: ${({ theme }) => theme.colors.red};
+    opacity: 1;
   `}
 `;

@@ -1,3 +1,6 @@
+import {
+  GITHUB_URL, LINKEDIN_URL,
+} from '@Constants/index';
 import React from 'react';
 import MenuItem from '../components/MenuItem';
 import * as S from './styled';
@@ -5,12 +8,21 @@ import * as S from './styled';
 const MenuDesktop = () => (
   <S.MenuWrapper>
     <MenuItem stepName="initial">.init()</MenuItem>
-    <MenuItem disabled stepName="about">.about()</MenuItem>
-    <MenuItem disabled stepName="skills">
-      .skills()
+    <MenuItem
+      href={GITHUB_URL}
+      stepName="github"
+    >
+      .github()
+
     </MenuItem>
-    <MenuItem disabled stepName="contact">
-      .contact()
+    <MenuItem
+      href={LINKEDIN_URL}
+      stepName="linkedin"
+    >
+      .linkedin()
+    </MenuItem>
+    <MenuItem stepName="email">
+      .email()
     </MenuItem>
   </S.MenuWrapper>
 );

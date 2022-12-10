@@ -11,10 +11,14 @@ import * as S from './styled';
 type Props = {
   stepName: String;
   disabled?: boolean;
+  href?: string;
 };
 
 const MenuItem: React.FC<Props> = ({
-  stepName, disabled = false, children,
+  stepName,
+  disabled = false,
+  children,
+  href,
 }) => {
   const { currentStep } = useNavigationContext();
   const navigationDispatch = useNavigationDispatch();
@@ -31,11 +35,16 @@ const MenuItem: React.FC<Props> = ({
       isSelected={stepName === currentStep}
       isDisabled={disabled}
     >
-      {children}
+      <a href={href}>
+        {children}
+      </a>
     </S.MenuItem>
   );
 };
 
-MenuItem.defaultProps = { disabled: false };
+MenuItem.defaultProps = {
+  disabled: false,
+  href: '#',
+};
 
 export default MenuItem;

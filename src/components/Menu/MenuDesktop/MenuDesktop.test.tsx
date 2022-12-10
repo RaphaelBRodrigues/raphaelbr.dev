@@ -3,7 +3,7 @@ import { fireEvent } from '@testing-library/react';
 import renderWithProviders from '@Utils/renderWithProviders';
 import MenuMobile from './index';
 
-describe('Testing Header Component', () => {
+describe.skip('Testing Header Component', () => {
   it('should have the .init() item selected', () => {
     const { getByTestId } = renderWithProviders(<MenuMobile />);
 
