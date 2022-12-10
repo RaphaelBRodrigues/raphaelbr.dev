@@ -22,7 +22,7 @@ const BinaryTable: React.FC = () => {
         highlighted: !!Math.round(Math.random() - 0.1),
         number: Math.round(Math.random()),
       })));
-    }, 900);
+    }, 300);
 
     return () => {
       clearInterval(updateTable);

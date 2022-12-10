@@ -5,11 +5,11 @@ export const MenuWrapper = styled.div<{ isMenuOpen: boolean }>`
   display: flex;
   flex-direction: column;
   position: absolute;
-  
   top: 0;
   left: ${({ isMenuOpen }) => (isMenuOpen ? 0 : '-120vw')};
   margin: 0;
   padding: 0;
+  margin-top: -40px;
   
   z-index: 999;
   background-color: rgba(0,0,0,0.99);

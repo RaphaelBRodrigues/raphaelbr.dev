@@ -4,9 +4,9 @@ import {
   useNavigationContext,
   useNavigationDispatch,
 } from '@Hooks/useNavigationContext';
-import { ReactComponent as Logo } from '@Assets/icons/logo.svg';
 import { ReactComponent as Linkedin } from '@Assets/icons/linkedin.svg';
 import { ReactComponent as Github } from '@Assets/icons/github.svg';
+import Logo from '@Components/logo';
 import * as S from './styled';
 import MenuItem from '../components/MenuItem';
 // import scrollBody from '@Utils/scroll';
@@ -31,7 +31,7 @@ const MenuMobile = () => {
         <i />
       </S.MenuButton>
       <S.MenuWrapper isMenuOpen={isMenuOpen}>
-        <Logo role="application" onClick={handleClick} />
+        <Logo staticMode />
         <S.MenuList>
           <MenuItem stepName="initial"> .init()</MenuItem>
           <MenuItem disabled stepName="about">.about()</MenuItem>

@@ -14,6 +14,7 @@ const FloatingCommits = () => {
           {sha.slice(0, 6)}
           {' '}
           |
+          {' '}
           {message}
         </S.Commit>
       ))}

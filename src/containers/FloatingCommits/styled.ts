@@ -3,8 +3,8 @@ import styled, { keyframes } from 'styled-components';
 
 const floatingText = (index: number) => keyframes`
   0% {
-    opacity: 0.2;
-    transform: rotate(${index * Math.random() > 0.5 ? -1 : 1}deg);
+    opacity: 0.3;
+    transform: rotate(${1.5 * index * Math.random() > 0.5 ? -1 : 1}deg);
     bottom: -${(Math.random() * index) * 8}%;
     
     @media(max-width: 768px) {
@@ -13,19 +13,19 @@ const floatingText = (index: number) => keyframes`
   }
   25% {
     opacity: 0.3;
-    transform: rotate(${index * Math.random() > 0.5 ? -1.5 : 1}deg);
+    transform: rotate(${1.5 * index * Math.random() > 0.5 ? -1.5 : 1}deg);
   }
   50% {
     opacity: 0.7;
-    transform: rotate(${index * Math.random() > 0.5 ? -1 : 1.5}deg);
+    transform: rotate(${1.5 * index * Math.random() > 0.5 ? -1 : 1.5}deg);
   }
   75% {
     opacity: 0.5;
-    transform: rotate(${index * Math.random() > 0.5 ? -1 : 1}deg);
+    transform: rotate(${1.5 * index * Math.random() > 0.5 ? -1 : 1}deg);
   }
   100% {
     opacity: 0;
-    transform: rotate(${index * Math.random() > 0.5 ? -1.5 : 1.5}deg);
+    transform: rotate(${1.5 * index * Math.random() > 0.5 ? -1.5 : 1.5}deg);
     bottom: 100%;
 
     @media(max-width: 768px) {
