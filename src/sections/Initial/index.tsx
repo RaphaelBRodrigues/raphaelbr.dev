@@ -35,9 +35,7 @@ const Initial: React.FC<{ isActive: boolean }> = ({ isActive }) => (
           <Mobile>
             <Text>
               And i'm a curious developer looking forward to
-              <br />
               work on amazing things, if you are looking for
-              <br />
               someone like that fell free to contact me!
               {/* And this is my personal website, i really */}
               {' '}
